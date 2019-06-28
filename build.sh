@@ -14,4 +14,5 @@ fi
 date=$(date '+%Y%m%d')
 sudo docker image build -t j0nnylester/speedtest-cli:$date-$build_arch -t j0nnylester/speedtest-cli:latest-$build_arch -f Dockerfile.$build_arch .
 sudo docker image push j0nnylester/speedtest-cli:$date-$build_arch
+sudo docker image push j0nnylester/speedtest-cli:latest-$build_arch
 rm Dockerfile.$build_arch
